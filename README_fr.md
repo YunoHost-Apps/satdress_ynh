@@ -26,7 +26,7 @@ Some long and extensive description of what the app is and does, lorem ipsum dol
 - Excepteur sint occaecat cupidatat non proident, sunt in culpa."
 
 
-**Version incluse :** 0.7.0~ynh1
+**Version incluse :** 0.7.0~ynh2
 
 **Démo :** https://github.com/nbd-wtf/satdress
 
