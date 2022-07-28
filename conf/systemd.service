@@ -16,8 +16,8 @@ Environment="PORT=__PORT__"
 Environment="DOMAIN=__DOMAIN__"
 Environment="SECRET=__RANDOMSTRING__"
 Environment="SITE_OWNER_NAME=__SITEOWNER__"
-Enviornment="SITE_OWNER_URL=__SITEOWNERURL"
-Enviornment="SITE_NAME=__SITENAME__"
+Environment="SITE_OWNER_URL=__SITEOWNERURL"
+Environment="SITE_NAME=__SITENAME__"
 
 # Sandboxing options to harden security
 # Details for these options: https://www.freedesktop.org/software/systemd/man/systemd.exec.html
