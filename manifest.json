@@ -16,7 +16,7 @@
         "userdoc": "https://github.com/nbd-wtf/satdresss",
         "code": "https://github.com/nbd-wtf/satdress"
     },
-    "license": "free",
+    "license": "GPL-3.0-only",
     "maintainer": {
         "name": "Navan Chauhan",
         "email": "satdress@navan.email"
