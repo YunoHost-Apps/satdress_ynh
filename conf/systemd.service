@@ -1,5 +1,5 @@
 [Unit]
-Description=Small description of the service
+Description=Federated Lightning addresses server.
 After=network.target
 
 [Service]
@@ -7,13 +7,19 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/script
+ExecStart=__FINALPATH__/bin/satdress
+Restart=on-failure
+RestartSec=10
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
+Environment="PORT=__PORT__"
+Environment="DOMAIN=__DOMAIN__"
+Environment="SECRET=__RANDOMSTRING__"
+Environment="SITE_OWNER_NAME=__SITEOWNER__"
+Enviornment="SITE_OWNER_URL=__SITEOWNERURL"
+Enviornment="SITE_NAME=__SITENAME__"
 
 # Sandboxing options to harden security
-# Depending on specificities of your service/app, you may need to tweak these
-# .. but this should be a good baseline
 # Details for these options: https://www.freedesktop.org/software/systemd/man/systemd.exec.html
 NoNewPrivileges=yes
 PrivateTmp=yes
