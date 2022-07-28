@@ -35,12 +35,6 @@
                 "type": "domain"
             },
             {
-                "name": "path",
-                "type": "path",
-                "example": "/satdress",
-                "default": "/satdress"
-            },
-            {
                 "name": "site_name",
                 "type": "string",
                 "example": "YUNOSatdress",
