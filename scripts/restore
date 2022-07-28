@@ -31,6 +31,11 @@ app=$YNH_APP_INSTANCE_NAME
 domain=$(ynh_app_setting_get --app=$app --key=domain)
 path_url=$(ynh_app_setting_get --app=$app --key=path)
 final_path=$(ynh_app_setting_get --app=$app --key=final_path)
+port=$(ynh_app_setting_get --app=$app --key=port)
+sitename=$(ynh_app_setting_get --app=$app --key=sitename)
+siteowner=$(ynh_app_setting_get --app=$app --key=siteowner)
+siteownerurl=$(ynh_app_setting_get --app=$app --key=siteownerurl)
+randomstring=$(ynh_app_setting_get --app=$app --key=randomstring)
 
 #=================================================
 # CHECK IF THE APP CAN BE RESTORED
