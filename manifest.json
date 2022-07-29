@@ -61,7 +61,10 @@
             {
                 "name": "is_public",
                 "type": "boolean",
-                "default": true
+                "default": true,
+                "help": {
+                    "en": "Allow non-YunoHost users"
+                }
             }
         ]
     }
