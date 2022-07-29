@@ -16,7 +16,7 @@
         "userdoc": "https://github.com/nbd-wtf/satdresss",
         "code": "https://github.com/nbd-wtf/satdress"
     },
-    "license": "free",
+    "license": "GPL-3.0-only",
     "maintainer": {
         "name": "Navan Chauhan",
         "email": "satdress@navan.email"
@@ -33,12 +33,6 @@
             {
                 "name": "domain",
                 "type": "domain"
-            },
-            {
-                "name": "path",
-                "type": "path",
-                "example": "/satdress",
-                "default": "/satdress"
             },
             {
                 "name": "site_name",
@@ -67,7 +61,10 @@
             {
                 "name": "is_public",
                 "type": "boolean",
-                "default": true
+                "default": true,
+                "help": {
+                    "en": "Allow non-YunoHost users"
+                }
             }
         ]
     }
