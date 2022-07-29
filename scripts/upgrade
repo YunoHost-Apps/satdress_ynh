@@ -124,6 +124,7 @@ then
 fi
 
 chown -R $app:root "$final_path"
+chmod 750 "${final_path}/bin/satdress"
 
 #=================================================
 # SETUP SYSTEMD

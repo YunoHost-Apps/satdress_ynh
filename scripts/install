@@ -125,6 +125,7 @@ ynh_remove_go
 
 # Set permissions to app files
 chown -R $app:root "$final_path"
+chmod 750 "${final_path}/bin/satdress"
 
 #=================================================
 # SETUP SYSTEMD
