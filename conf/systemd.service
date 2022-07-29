@@ -16,7 +16,7 @@ Environment="PORT=__PORT__"
 Environment="DOMAIN=__DOMAIN__"
 Environment="SECRET=__RANDOMSTRING__"
 Environment="SITE_OWNER_NAME=__SITEOWNER__"
-Environment="SITE_OWNER_URL=__SITEOWNERURL"
+Environment="SITE_OWNER_URL=__SITEOWNERURL__"
 Environment="SITE_NAME=__SITENAME__"
 
 # Sandboxing options to harden security
