@@ -20,6 +20,7 @@ Federated Lightning Address server anyone can self-host to receive Lightning pay
 
 **Shipped version:** 0.7.0~ynh2
 
+
 **Demo:** https://github.com/nbd-wtf/satdress
 
 ## Screenshots
