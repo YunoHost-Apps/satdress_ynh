@@ -5,7 +5,8 @@ It shall NOT be edited by hand.
 
 # Satdress for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/satdress.svg)](https://dash.yunohost.org/appci/app/satdress) ![Working status](https://ci-apps.yunohost.org/ci/badges/satdress.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/satdress.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/satdress.svg)](https://dash.yunohost.org/appci/app/satdress) ![Working status](https://ci-apps.yunohost.org/ci/badges/satdress.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/satdress.maintain.svg)
+
 [![Install Satdress with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=satdress)
 
 *[Lire ce readme en français.](./README_fr.md)*
