@@ -7,6 +7,6 @@ test_format = 1.0
     # -------------------------------
     
     args.randomstring = "BUISDF3"
-	args.sitename="zamn"
-	args.siteowner="@zamn"
-	args.siteownerurl="https://zamn.com"
+	args.site_name="zamn"
+	args.site_owner="@zamn"
+	args.site_owner_url="https://zamn.com"
