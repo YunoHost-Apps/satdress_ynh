@@ -29,7 +29,6 @@ Federated Lightning Address server anyone can self-host to receive Lightning pay
 
 ## Documentation and resources
 
-* Official app website: <https://github.com/nbd-wtf/satdress>
 * Official user documentation: <https://github.com/nbd-wtf/satdresss>
 * Official admin documentation: <https://github.com/nbd-wtf/satdress>
 * Upstream app code repository: <https://github.com/nbd-wtf/satdress>
