@@ -15,7 +15,6 @@ demo = "https://github.com/nbd-wtf/satdress"
 admindoc = "https://github.com/nbd-wtf/satdress"
 userdoc = "https://github.com/nbd-wtf/satdresss"
 code = "https://github.com/nbd-wtf/satdress"
-website = "https://github.com/nbd-wtf/satdress"
 
 [integration]
 yunohost = ">= 11.1.15"
