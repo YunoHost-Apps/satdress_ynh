@@ -1,6 +1,0 @@
-SOURCE_URL=https://github.com/nbd-wtf/satdress/archive/refs/tags/v0.7.2.tar.gz
-SOURCE_SUM=1f7ec9987ee5d84aa8da6e96f8a5028fe1e391b6cdb3fd3cce3b637701645972
-SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
-SOURCE_IN_SUBDIR=true
-SOURCE_EXTRACT=true

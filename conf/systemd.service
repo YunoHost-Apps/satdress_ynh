@@ -6,8 +6,8 @@ After=network.target
 Type=simple
 User=__APP__
 Group=__APP__
-WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/bin/satdress
+WorkingDirectory=__INSTALL_DIR__/
+ExecStart=__INSTALL_DIR__/bin/satdress
 Restart=on-failure
 RestartSec=10
 Environment="PORT=__PORT__"
