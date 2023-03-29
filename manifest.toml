@@ -34,21 +34,25 @@ ram.runtime = "50M"
 
     [install.site_name]
     ask.en = "Site name to be displayed"
+    ask.fr = "Nom du site à afficher"
     type = "string"
     example = "YUNOSatdress"
 
     [install.site_owner]
     ask.en = "Site owner handle to be displayed"
+    ask.fr = "Identifiant du propriétaire du site à afficher"
     type = "string"
     example = "@yhuser"
 
     [install.site_owner_url]
     ask.en = "Site owner's URL to be displayed"
+    ask.fr = "URL du propriétaire du site à afficher"
     type = "string"
     example = "https://t.me/someuser"
 
     [install.init_main_permission]
     help.en = "Allow non-YunoHost users"
+    help.fr = "Autoriser les utilisateurs non-YunoHost"
     type = "group"
     default = "visitors"
 
