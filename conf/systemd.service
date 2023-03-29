@@ -1,5 +1,5 @@
 [Unit]
-Description=Federated Lightning addresses server.
+Description=Satdress: federated Lightning addresses server
 After=network.target
 
 [Service]
