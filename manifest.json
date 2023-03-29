@@ -3,13 +3,13 @@
     "id": "satdress",
     "packaging_format": 1,
     "description": {
-        "en": "Federated Lightning addresses server."
+        "en": "Federated Lightning addresses server",
+        "fr": "Serveur d'adresses Lightning fédéré"
     },
-    "version": "0.7.0~ynh2",
+    "version": "0.7.2~ynh1",
     "url": "https://github.com/nbd-wtf/satdress",
     "upstream": {
         "license": "MIT",
-        "website": "https://github.com/nbd-wtf/satdress",
         "demo": "https://github.com/nbd-wtf/satdress",
         "admindoc": "https://github.com/nbd-wtf/satdress",
         "userdoc": "https://github.com/nbd-wtf/satdresss",
@@ -21,7 +21,7 @@
         "email": "satdress@navan.email"
     },
     "requirements": {
-        "yunohost": ">= 4.3.0"
+        "yunohost": ">= 11.1.15"
     },
     "multi_instance": true,
     "services": [
