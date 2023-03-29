@@ -1,21 +1,21 @@
 [Unit]
-Description=Federated Lightning addresses server.
+Description=Satdress: federated Lightning addresses server
 After=network.target
 
 [Service]
 Type=simple
 User=__APP__
 Group=__APP__
-WorkingDirectory=__FINALPATH__/
-ExecStart=__FINALPATH__/bin/satdress
+WorkingDirectory=__INSTALL_DIR__/
+ExecStart=__INSTALL_DIR__/bin/satdress
 Restart=on-failure
 RestartSec=10
 Environment="PORT=__PORT__"
 Environment="DOMAIN=__DOMAIN__"
 Environment="SECRET=__RANDOMSTRING__"
-Environment="SITE_OWNER_NAME=__SITEOWNER__"
-Environment="SITE_OWNER_URL=__SITEOWNERURL__"
-Environment="SITE_NAME=__SITENAME__"
+Environment="SITE_OWNER_NAME=__SITE_OWNER__"
+Environment="SITE_OWNER_URL=__SITE_OWNER_URL__"
+Environment="SITE_NAME=__SITE_NAME__"
 
 # Sandboxing options to harden security
 # Details for these options: https://www.freedesktop.org/software/systemd/man/systemd.exec.html

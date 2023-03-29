@@ -19,7 +19,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 Federated Lightning Address server anyone can self-host to receive Lightning payments at you@yourdomain.com noncustodially.
 
 
-**Version incluse :** 0.7.2~ynh1
+**Version incluse :** 0.7.2~ynh2
 
 **Démo :** https://github.com/nbd-wtf/satdress
 
@@ -27,14 +27,6 @@ Federated Lightning Address server anyone can self-host to receive Lightning pay
 
 ![Capture d’écran de Satdress](./doc/screenshots/example.jpg)
 
-## Avertissements / informations importantes
-
-* Limitations:
-    * Requires a full dedicated domain
-    * No LDAP
-
-* Disclaimer:
-    * Promotes Crypto. Crypto products are unregulated and can be highly risky. There may be no regulatory recourse for any loss from such transactions.
 ## Documentations et ressources
 
 * Documentation officielle utilisateur : <https://github.com/nbd-wtf/satdresss>
