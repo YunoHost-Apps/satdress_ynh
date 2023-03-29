@@ -27,16 +27,9 @@ Federated Lightning Address server anyone can self-host to receive Lightning pay
 
 ![Screenshot of Satdress](./doc/screenshots/example.jpg)
 
-## Disclaimers / important information
-
-* Limitations:
-    * Requires a full dedicated domain
-    * No LDAP
-
-* Disclaimer:
-    * Promotes Crypto. Crypto products are unregulated and can be highly risky. There may be no regulatory recourse for any loss from such transactions.
 ## Documentation and resources
 
+* Official app website: <https://github.com/nbd-wtf/satdress>
 * Official user documentation: <https://github.com/nbd-wtf/satdresss>
 * Official admin documentation: <https://github.com/nbd-wtf/satdress>
 * Upstream app code repository: <https://github.com/nbd-wtf/satdress>
