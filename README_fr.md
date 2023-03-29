@@ -19,8 +19,7 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 Federated Lightning Address server anyone can self-host to receive Lightning payments at you@yourdomain.com noncustodially.
 
 
-**Version incluse :** 0.7.0~ynh2
-
+**Version incluse :** 0.7.2~ynh1
 
 **Démo :** https://github.com/nbd-wtf/satdress
 
