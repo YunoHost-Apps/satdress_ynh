@@ -34,7 +34,7 @@ then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
 	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$install_dir/build" --keep="$sitename-multiple.db"
+	ynh_setup_source --dest_dir="$install_dir/build" --keep="$site_name-multiple.db"
 fi
 
 chmod 750 "$install_dir"
