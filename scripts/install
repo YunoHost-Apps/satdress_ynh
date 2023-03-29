@@ -14,18 +14,18 @@ source /usr/share/yunohost/helpers
 # RETRIEVE ARGUMENTS FROM THE MANIFEST
 #=================================================
 
-sitename=$YNH_APP_ARG_SITE_NAME
-siteowner=$YNH_APP_ARG_SITE_OWNER
-siteownerurl=$YNH_APP_ARG_SITE_OWNER_URL
+site_name=$YNH_APP_ARG_SITE_NAME
+site_owner=$YNH_APP_ARG_SITE_OWNER
+site_owner_url=$YNH_APP_ARG_SITE_OWNER_URL
 randomstring=$(ynh_string_random --length=12)
 
 #=================================================
 # STORE SETTINGS FROM MANIFEST
 #=================================================
 
-ynh_app_setting_set --app=$app --key=sitename --value=$sitename
-ynh_app_setting_set --app=$app --key=siteowner --value=$siteowner
-ynh_app_setting_set --app=$app --key=siteownerurl --value=$siteownerurl
+ynh_app_setting_set --app=$app --key=site_name --value=$site_name
+ynh_app_setting_set --app=$app --key=site_owner --value=$site_owner
+ynh_app_setting_set --app=$app --key=site_owner_url --value=$site_owner_url
 ynh_app_setting_set --app=$app --key=randomstring --value=$randomstring
 
 #=================================================
