@@ -5,7 +5,7 @@ name = "Satdress"
 description.en = "Federated Lightning addresses server"
 description.fr = "Serveur d'adresses Lightning fédéré"
 
-version = "0.7.2~ynh1"
+version = "0.7.2~ynh2"
 
 maintainers = ["Navan Chauhan"]
 
