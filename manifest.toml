@@ -17,7 +17,7 @@ userdoc = "https://github.com/nbd-wtf/satdresss"
 code = "https://github.com/nbd-wtf/satdress"
 
 [integration]
-yunohost = ">= 11.1.15"
+yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
 ldap =  false
