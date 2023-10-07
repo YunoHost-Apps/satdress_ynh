@@ -5,7 +5,7 @@ name = "Satdress"
 description.en = "Federated Lightning addresses server"
 description.fr = "Serveur d'adresses Lightning fédéré"
 
-version = "0.7.2~ynh2"
+version = "0.7.2~ynh3"
 
 maintainers = ["Navan Chauhan"]
 
@@ -17,7 +17,7 @@ userdoc = "https://github.com/nbd-wtf/satdresss"
 code = "https://github.com/nbd-wtf/satdress"
 
 [integration]
-yunohost = ">= 11.1.15"
+yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
 ldap =  false
@@ -29,7 +29,6 @@ ram.runtime = "50M"
 [install]
     [install.domain]
     type = "domain"
-    full_domain = true
 
     [install.site_name]
     ask.en = "Site name to be displayed"
