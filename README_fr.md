@@ -32,7 +32,6 @@ Federated Lightning Address server anyone can self-host to receive Lightning pay
 * Documentation officielle utilisateur : <https://github.com/nbd-wtf/satdresss>
 * Documentation officielle de l’admin : <https://github.com/nbd-wtf/satdress>
 * Dépôt de code officiel de l’app : <https://github.com/nbd-wtf/satdress>
-* Documentation YunoHost pour cette app : <https://yunohost.org/app_satdress>
 * Signaler un bug : <https://github.com/YunoHost-Apps/satdress_ynh/issues>
 
 ## Informations pour les développeurs
