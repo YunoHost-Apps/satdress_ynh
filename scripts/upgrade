@@ -7,7 +7,6 @@
 #=================================================
 
 source _common.sh
-source ynh_install_go
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -50,7 +49,6 @@ popd
 
 #REMOVEME? 	ynh_secure_remove --file="$install_dir/build"
 ynh_remove_go
-
 
 chown -R $app:root "$install_dir"
 chmod 750 "${install_dir}/bin/satdress"
