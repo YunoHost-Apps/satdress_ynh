@@ -7,7 +7,6 @@
 #=================================================
 
 source _common.sh
-source ynh_install_go
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -28,14 +27,10 @@ ynh_systemd_action --service_name=$app --action="stop" --log_path="/var/log/$app
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
+ynh_script_progression --message="Upgrading source files..." --weight=1
 
-if [ "$upgrade_type" == "UPGRADE_APP" ]
-then
-	ynh_script_progression --message="Upgrading source files..." --weight=1
-
-	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$install_dir/build" --keep="$site_name-multiple.db"
-fi
+# Download, check integrity, uncompress and patch the source from app.src
+ynh_setup_source --dest_dir="$install_dir/build" --keep="$site_name-multiple.db"
 
 chmod 750 "$install_dir"
 chmod -R o-rwx "$install_dir"
@@ -54,24 +49,20 @@ ynh_add_nginx_config
 #=================================================
 # BUILDING SOURCES AND SETTING UP THE SERVER
 #=================================================
+ynh_script_progression --message="Building the sources (it will take some time)..." --weight=6
 
-if [ "$upgrade_type" == "UPGRADE_APP" ]
-then
-	ynh_script_progression --message="Building the sources (it will take some time)..." --weight=6
+ynh_exec_warn_less ynh_install_go --go_version=$GO_VERSION
 
-	ynh_exec_warn_less ynh_install_go --go_version=$GO_VERSION
-
-	pushd "$install_dir/build"
-		# Build the sources
-		ynh_use_go
-		export GOPATH="$install_dir/build/go"
-		export GOCACHE="$install_dir/build/.cache"
-		CGO_ENABLED=1 go build -trimpath -v -o "$install_dir/bin/" > /dev/null 2>&1
-	popd
+pushd "$install_dir/build"
+	# Build the sources
+	ynh_use_go
+	export GOPATH="$install_dir/build/go"
+	export GOCACHE="$install_dir/build/.cache"
+	CGO_ENABLED=1 go build -trimpath -v -o "$install_dir/bin/" > /dev/null 2>&1
+popd
 
 #REMOVEME? 	ynh_secure_remove --file="$install_dir/build"
-	ynh_remove_go
-fi
+ynh_remove_go
 
 chown -R $app:root "$install_dir"
 chmod 750 "${install_dir}/bin/satdress"
