@@ -26,13 +26,8 @@ ynh_app_setting_set --key=randomstring --value=$randomstring
 #=================================================
 ynh_script_progression "Setting up source files..."
 
-# Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir/build"
 
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chmod -R o-rwx "$install_dir"
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R $app:www-data "$install_dir"
-#=================================================
-# SPECIFIC SETUP
 #=================================================
 # BUILDING SOURCES AND SETTING UP THE SERVER
 #=================================================
@@ -48,11 +43,11 @@ pushd "$install_dir/build"
 	CGO_ENABLED=1 go build -trimpath -v -o "$install_dir/bin/" > /dev/null 2>&1
 popd
 
-#REMOVEME? ynh_safe_rm "$install_dir/build"
+ynh_safe_rm "$install_dir/build"
 ynh_go_remove
 
 # Set permissions to app files
-#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R $app:root "$install_dir"
+chown -R $app:root "$install_dir"
 chmod 750 "${install_dir}/bin/satdress"
 
 #=================================================
@@ -60,10 +55,8 @@ chmod 750 "${install_dir}/bin/satdress"
 #=================================================
 ynh_script_progression "Adding system configurations related to $app..."
 
-# Create a dedicated NGINX config
 ynh_config_add_nginx
 
-# Create a dedicated systemd config
 ynh_config_add_systemd
 
 ynh_config_add_logrotate
@@ -75,7 +68,6 @@ yunohost service add $app --description="Federated Lightning addresses server" -
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-# Start a systemd service
 ynh_systemctl --service=$app --action="start"
 
 #=================================================
