@@ -12,7 +12,6 @@ maintainers = ["Navan Chauhan"]
 [upstream]
 license = "MIT"
 demo = "https://github.com/nbd-wtf/satdress"
-admindoc = "https://github.com/nbd-wtf/satdress"
 userdoc = "https://github.com/nbd-wtf/satdresss"
 code = "https://github.com/nbd-wtf/satdress"
 
