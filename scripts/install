@@ -1,11 +1,5 @@
 #!/bin/bash
 
-#=================================================
-# GENERIC START
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
-
 source _common.sh
 source /usr/share/yunohost/helpers
 
@@ -22,41 +16,35 @@ randomstring=$(ynh_string_random --length=12)
 # STORE SETTINGS FROM MANIFEST
 #=================================================
 
-ynh_app_setting_set --app=$app --key=site_name --value=$site_name
-ynh_app_setting_set --app=$app --key=site_owner --value=$site_owner
-ynh_app_setting_set --app=$app --key=site_owner_url --value=$site_owner_url
-ynh_app_setting_set --app=$app --key=randomstring --value=$randomstring
+ynh_app_setting_set --key=site_name --value=$site_name
+ynh_app_setting_set --key=site_owner --value=$site_owner
+ynh_app_setting_set --key=site_owner_url --value=$site_owner_url
+ynh_app_setting_set --key=randomstring --value=$randomstring
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Setting up source files..." --weight=3
+ynh_script_progression "Setting up source files..."
 
-# Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir/build"
 
-chmod -R o-rwx "$install_dir"
-chown -R $app:www-data "$install_dir"
-
-#=================================================
-# SPECIFIC SETUP
 #=================================================
 # BUILDING SOURCES AND SETTING UP THE SERVER
 #=================================================
-ynh_script_progression --message="Building the sources (it will take some time)..." --weight=6
+ynh_script_progression "Building the sources (it will take some time)..."
 
-ynh_exec_warn_less ynh_install_go --go_version=$GO_VERSION
+ynh_go_install
 
 pushd "$install_dir/build"
 	# Build the sources
-	ynh_use_go
+
 	export GOPATH="$install_dir/build/go"
 	export GOCACHE="$install_dir/build/.cache"
 	CGO_ENABLED=1 go build -trimpath -v -o "$install_dir/bin/" > /dev/null 2>&1
 popd
 
-#REMOVEME? ynh_secure_remove --file="$install_dir/build"
-ynh_remove_go
+ynh_safe_rm "$install_dir/build"
+ynh_go_remove
 
 # Set permissions to app files
 chown -R $app:root "$install_dir"
@@ -65,28 +53,25 @@ chmod 750 "${install_dir}/bin/satdress"
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================
-ynh_script_progression --message="Adding system configurations related to $app..." --weight=1
+ynh_script_progression "Adding system configurations related to $app..."
 
-# Create a dedicated NGINX config
-ynh_add_nginx_config
+ynh_config_add_nginx
 
-# Create a dedicated systemd config
-ynh_add_systemd_config
+ynh_config_add_systemd
 
-ynh_use_logrotate
+ynh_config_add_logrotate
 
 yunohost service add $app --description="Federated Lightning addresses server" --log="/var/log/$app/$app.log"
 
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
-ynh_script_progression --message="Starting a systemd service..." --weight=2
+ynh_script_progression "Starting $app's systemd service..."
 
-# Start a systemd service
-ynh_systemd_action --service_name=$app --action="start" --log_path="/var/log/$app/$app.log"
+ynh_systemctl --service=$app --action="start"
 
 #=================================================
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Installation of $app completed" --last
+ynh_script_progression "Installation of $app completed"

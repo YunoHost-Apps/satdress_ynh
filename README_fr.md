@@ -5,7 +5,7 @@ Il NE doit PAS être modifié à la main.
 
 # Satdress pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/satdress.svg)](https://dash.yunohost.org/appci/app/satdress) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/satdress.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/satdress.maintain.svg)
+[![Niveau d’intégration](https://dash.yunohost.org/integration/satdress.svg)](https://ci-apps.yunohost.org/ci/apps/satdress/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/satdress.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/satdress.maintain.svg)
 
 [![Installer Satdress avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=satdress)
 
@@ -19,7 +19,7 @@ Il NE doit PAS être modifié à la main.
 Federated Lightning Address server anyone can self-host to receive Lightning payments at you@yourdomain.com noncustodially.
 
 
-**Version incluse :** 0.8.0~ynh1
+**Version incluse :** 0.8.0~ynh2
 
 **Démo :** <https://github.com/nbd-wtf/satdress>
 
@@ -30,7 +30,6 @@ Federated Lightning Address server anyone can self-host to receive Lightning pay
 ## Documentations et ressources
 
 - Documentation officielle utilisateur : <https://github.com/nbd-wtf/satdresss>
-- Documentation officielle de l’admin : <https://github.com/nbd-wtf/satdress>
 - Dépôt de code officiel de l’app : <https://github.com/nbd-wtf/satdress>
 - YunoHost Store : <https://apps.yunohost.org/app/satdress>
 - Signaler un bug : <https://github.com/YunoHost-Apps/satdress_ynh/issues>
