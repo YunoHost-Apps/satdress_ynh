@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # Satdress YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/satdress.svg)](https://ci-apps.yunohost.org/ci/apps/satdress/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/satdress.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/satdress.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/satdress)](https://ci-apps.yunohost.org/ci/apps/satdress/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/satdress)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/satdress)
 
 [![Instalatu Satdress YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=satdress)
 
@@ -19,7 +21,7 @@ EZ editatu eskuz.
 Federated Lightning Address server anyone can self-host to receive Lightning payments at you@yourdomain.com noncustodially.
 
 
-**Paketatutako bertsioa:** 0.8.0~ynh2
+**Paketatutako bertsioa:** 0.8.0~ynh3
 
 **Demoa:** <https://github.com/nbd-wtf/satdress>
 

@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Satdress untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/satdress.svg)](https://ci-apps.yunohost.org/ci/apps/satdress/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/satdress.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/satdress.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/satdress)](https://ci-apps.yunohost.org/ci/apps/satdress/)
+![Status kerja](https://apps.yunohost.org/badge/state/satdress)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/satdress)
 
 [![Pasang Satdress dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=satdress)
 
@@ -19,7 +21,7 @@ Ini TIDAK boleh diedit dengan tangan.
 Federated Lightning Address server anyone can self-host to receive Lightning payments at you@yourdomain.com noncustodially.
 
 
-**Versi terkirim:** 0.8.0~ynh2
+**Versi terkirim:** 0.8.0~ynh3
 
 **Demo:** <https://github.com/nbd-wtf/satdress>
 
