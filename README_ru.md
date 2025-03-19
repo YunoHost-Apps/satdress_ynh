@@ -5,7 +5,9 @@
 
 # Satdress для YunoHost
 
-[![Уровень интеграции](https://dash.yunohost.org/integration/satdress.svg)](https://ci-apps.yunohost.org/ci/apps/satdress/) ![Состояние работы](https://ci-apps.yunohost.org/ci/badges/satdress.status.svg) ![Состояние сопровождения](https://ci-apps.yunohost.org/ci/badges/satdress.maintain.svg)
+[![Уровень интеграции](https://apps.yunohost.org/badge/integration/satdress)](https://ci-apps.yunohost.org/ci/apps/satdress/)
+![Состояние работы](https://apps.yunohost.org/badge/state/satdress)
+![Состояние сопровождения](https://apps.yunohost.org/badge/maintained/satdress)
 
 [![Установите Satdress с YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=satdress)
 
