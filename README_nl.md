@@ -5,7 +5,9 @@ Hij mag NIET handmatig aangepast worden.
 
 # Satdress voor Yunohost
 
-[![Integratieniveau](https://dash.yunohost.org/integration/satdress.svg)](https://ci-apps.yunohost.org/ci/apps/satdress/) ![Mate van functioneren](https://ci-apps.yunohost.org/ci/badges/satdress.status.svg) ![Onderhoudsstatus](https://ci-apps.yunohost.org/ci/badges/satdress.maintain.svg)
+[![Integratieniveau](https://apps.yunohost.org/badge/integration/satdress)](https://ci-apps.yunohost.org/ci/apps/satdress/)
+![Mate van functioneren](https://apps.yunohost.org/badge/state/satdress)
+![Onderhoudsstatus](https://apps.yunohost.org/badge/maintained/satdress)
 
 [![Satdress met Yunohost installeren](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=satdress)
 
