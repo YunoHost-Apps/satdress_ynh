@@ -21,7 +21,7 @@ Il NE doit PAS être modifié à la main.
 Federated Lightning Address server anyone can self-host to receive Lightning payments at you@yourdomain.com noncustodially.
 
 
-**Version incluse :** 0.8.0~ynh3
+**Version incluse :** 0.8.0~ynh4
 
 **Démo :** <https://github.com/nbd-wtf/satdress>
 
