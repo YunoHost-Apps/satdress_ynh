@@ -1,12 +1,24 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/tests.v1.schema.json
+
 test_format = 1.0
 
 [default]
 
+    # ------------
+    # Tests to run
+    # ------------
+
     # -------------------------------
     # Default args to use for install
     # -------------------------------
-    
+
     args.randomstring = "BUISDF3"
-	args.site_name="zamn"
-	args.site_owner="@zamn"
-	args.site_owner_url="https://zamn.com"
+    args.site_name="zamn"
+    args.site_owner="@zamn"
+    args.site_owner_url="https://zamn.com"
+
+    # -------------------------------
+    # Commits to test upgrade from
+    # -------------------------------
+
+    test_upgrade_from.82696da0ab5b40f61be2ab02feb3d121d07694a4.name = "Upgrade from 0.8.0~ynh3"
