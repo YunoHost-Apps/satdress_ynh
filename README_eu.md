@@ -21,7 +21,7 @@ EZ editatu eskuz.
 Federated Lightning Address server anyone can self-host to receive Lightning payments at you@yourdomain.com noncustodially.
 
 
-**Paketatutako bertsioa:** 0.8.0~ynh3
+**Paketatutako bertsioa:** 0.8.0~ynh4
 
 **Demoa:** <https://github.com/nbd-wtf/satdress>
 
@@ -40,7 +40,7 @@ Federated Lightning Address server anyone can self-host to receive Lightning pay
 
 Bidali `pull request`a [`testing` abarrera](https://github.com/YunoHost-Apps/satdress_ynh/tree/testing).
 
-`testing` abarra probatzeko, ondorengoa egin:
+`testing` abarra probatzeko, honakoa egin:
 
 ```bash
 sudo yunohost app install https://github.com/YunoHost-Apps/satdress_ynh/tree/testing --debug

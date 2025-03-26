@@ -1,3 +1,5 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
 packaging_format = 2
 
 id = "satdress"
@@ -5,7 +7,7 @@ name = "Satdress"
 description.en = "Federated Lightning addresses server"
 description.fr = "Serveur d'adresses Lightning fédéré"
 
-version = "0.8.0~ynh3"
+version = "0.8.0~ynh4"
 
 maintainers = ["Navan Chauhan"]
 
@@ -58,12 +60,10 @@ ram.runtime = "50M"
     default = "visitors"
 
 [resources]
-        [resources.sources.main]
-        url = "https://github.com/nbd-wtf/satdress/archive/refs/tags/v0.8.0.tar.gz"
-        sha256 = "465868053314520526f591b75f9ddfe446aba47ee793d76c74b4d9d9c20f4979"
-        autoupdate.strategy = "latest_github_tag"
-
-    [resources.ports]
+    [resources.sources.main]
+    url = "https://github.com/nbd-wtf/satdress/archive/refs/tags/v0.8.0.tar.gz"
+    sha256 = "465868053314520526f591b75f9ddfe446aba47ee793d76c74b4d9d9c20f4979"
+    autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
@@ -71,3 +71,5 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
+
+    [resources.ports]

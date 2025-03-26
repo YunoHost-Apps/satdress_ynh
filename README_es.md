@@ -3,7 +3,7 @@ Este archivo README esta generado automaticamente<https://github.com/YunoHost/ap
 No se debe editar a mano.
 -->
 
-# Satdress para Yunohost
+# Satdress para YunoHost
 
 [![Nivel de integración](https://apps.yunohost.org/badge/integration/satdress)](https://ci-apps.yunohost.org/ci/apps/satdress/)
 ![Estado funcional](https://apps.yunohost.org/badge/state/satdress)
@@ -21,7 +21,7 @@ No se debe editar a mano.
 Federated Lightning Address server anyone can self-host to receive Lightning payments at you@yourdomain.com noncustodially.
 
 
-**Versión actual:** 0.8.0~ynh3
+**Versión actual:** 0.8.0~ynh4
 
 **Demo:** <https://github.com/nbd-wtf/satdress>
 
