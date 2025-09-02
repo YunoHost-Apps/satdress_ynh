@@ -18,7 +18,7 @@ userdoc = "https://github.com/nbd-wtf/satdresss"
 code = "https://github.com/nbd-wtf/satdress"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -73,3 +73,6 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.ports]
+
+    [resources.go]
+    version = "1.20"

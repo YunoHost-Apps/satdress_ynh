@@ -4,7 +4,7 @@
 # IMPORT GENERIC HELPERS
 #=================================================
 
-source _common.sh
+
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -31,7 +31,7 @@ ynh_setup_source --dest_dir="$install_dir/build" --keep="$site_name-multiple.db 
 #=================================================
 ynh_script_progression "Building the sources (it will take some time)..."
 
-ynh_go_install
+#REMOVEME? ynh_go_install
 
 pushd "$install_dir/build"
 	# Build the sources
@@ -42,7 +42,7 @@ pushd "$install_dir/build"
 popd
 
 ynh_safe_rm "$install_dir/build"
-ynh_go_remove
+#REMOVEME? ynh_go_remove
 
 chown -R $app:root "$install_dir"
 chmod 750 "${install_dir}/bin/satdress"
